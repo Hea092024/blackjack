@@ -30,3 +30,7 @@ function newCard () {
     sum += thirdCard
     startGame()
 }
+
+function startGame (){
+    renderGame()
+}
