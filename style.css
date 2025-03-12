@@ -1,44 +1,63 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    background: url(./assets/table.webp);
-    background-size: cover;
+    background: #1a1a1a;
+    color: #00ff00;
+    font-family: 'VT323', monospace;
+    padding: 4vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 3.5rem;
-    color: white;
-    gap: 1rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-#buttons{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    overflow: none;
 }
 
-button{
-    color: #016f32;
-    font-size: 2rem;
-    padding: 10px 10px;
-    background: goldenrod;
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 250px;
+
+h1 {
+    font-size: clamp(3rem, 8vw, 5rem);
+    text-shadow: 0 0 10px #00ff00;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#buttons {
+    background: rgba(0,0,0,0.8);
+    padding: 4vh 6vw;
+    border: 2px solid #00ff00;
+    margin: 3vh auto;
+    /* width: 90%; */
+    max-width: 600px;
+}
+
+button {
+    background: #000;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    padding: 2vh 6vw;
+    margin: 2vh 0;
+    transition: all 0.2s;
+}
+
+button:active {
+    background: #00ff0022;
+}
+
+#cards-el, #sum-el {
+    font-size: clamp(3rem, 8vw, 5rem);
+    text-align: center;
+    margin: 3vh 0;
+    text-shadow: 0 0 10px #00ff00;
 }
 
 #message-el {
-    font-style: italic;
-}
-
-h1 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 4.5rem;
-    color: goldenrod;
+    padding: 2vh 4vw;
+    margin: 2vh auto;
+    max-width: 800px;
+    border: 1px dashed #00ff00;
 }

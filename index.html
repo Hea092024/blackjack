@@ -7,14 +7,15 @@
     <script src="script.js" defer></script>
     <title>BlackJack</title>
   </head>
-  <body>
+<body>
     <h1>Blackjack</h1>
     <p id="message-el">Want to play a round?</p>
-   <div id="buttons">
-    <p id="cards-el">Cards:</p>
-    <p id="sum-el">Sum:</p>
-</div>
-<button onclick="startGame()">START GAME</button>
-<button onclick="newCard()">NEW CARD</button>
+    <div id="buttons">
+      <p id="cards-el">Cards:</p>
+      <p id="sum-el">Sum:</p>
+    </div>
+    <button id="start-btn" onclick="startGame()">START GAME</button>
+    <button id="new-card-btn" onclick="newCard()" style="display: none;">NEW CARD</button>
+    <button id="restart-btn" onclick="restartGame()" style="display: none;">RESTART GAME</button>
   </body>
 </html>
